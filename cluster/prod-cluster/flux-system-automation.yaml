@@ -13,7 +13,7 @@ spec:
       author:
         email: fluxcdbot@users.noreply.github.com
         name: Flux Bot
-      messageTemplate: 'chore: update eodt image to {{range .Updated.Images}}{{.NewTag}}{{end}}'
+      messageTemplate: '{{range .Changed.Changes}}{{print .OldValue}} -> {{println .NewValue}}{{end}}'
     push:
       branch: main
   interval: 1m0s
