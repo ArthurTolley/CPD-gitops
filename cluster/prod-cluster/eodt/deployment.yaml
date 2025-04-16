@@ -13,8 +13,6 @@ spec:
       labels:
         app: eodt-api
     spec:
-      imagePullSecrets:
-        - name: ghcr-pull-secret
       containers:
         - name: fastapi
           image: ghcr.io/arthurtolley/eodt:0.0.2 # {"$imagepolicy": "flux-system:eodt"}
