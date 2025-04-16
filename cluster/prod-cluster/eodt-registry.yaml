@@ -7,5 +7,3 @@ metadata:
 spec:
   image: ghcr.io/arthurtolley/eodt
   interval: 1m0s
-  secretRef:
-    name: flux-system-ghcr-pull-secret
