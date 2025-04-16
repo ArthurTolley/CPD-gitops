@@ -1,9 +1,0 @@
-# image-repository.yaml
-apiVersion: image.toolkit.fluxcd.io/v1beta2
-kind: ImageRepository
-metadata:
-  name: eodt
-  namespace: flux-system
-spec:
-  image: ghcr.io/arthurtolley/eodt
-  interval: 0m30s
