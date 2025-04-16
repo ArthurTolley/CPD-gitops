@@ -2,3 +2,5 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
   - ../eodt-kustomization.yaml
+  - ../eodt-policy.yaml
+  - ../eodt-registry.yaml
