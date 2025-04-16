@@ -4,3 +4,4 @@ resources:
   - ../eodt-kustomization.yaml
   - ../eodt-policy.yaml
   - ../eodt-registry.yaml
+  - ../flux-system-automation.yaml
