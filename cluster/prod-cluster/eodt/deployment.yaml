@@ -17,7 +17,7 @@ spec:
         - name: ghcr-pull-secret
       containers:
         - name: fastapi
-          image: ghcr.io/arthurtolley/eodt:0.0.0 # {"$imagepolicy": "flux-system:eodt"}
+          image: ghcr.io/arthurtolley/eodt:0.0.1 # {"$imagepolicy": "flux-system:eodt"}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
