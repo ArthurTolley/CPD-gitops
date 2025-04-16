@@ -4,6 +4,7 @@ metadata:
   name: eodt
   namespace: flux-system
 resources:
+  - namespace.yaml
   - deployment.yaml
   - service.yaml
   - ingress.yaml
