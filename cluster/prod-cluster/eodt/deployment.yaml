@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eodt-api
+  namespace: eodt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eodt-api
+  template:
+    metadata:
+      labels:
+        app: eodt-api
+    spec:
+      imagePullSecrets:
+        - name: ghcr-pull-secret
+      containers:
+        - name: fastapi
+          image: ghcr.io/arthurtolley/eodt:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
