@@ -1,6 +1,5 @@
 resources:
   - namespace.yaml
-  - sealed-ghcr-pull-secret.yaml
   - deployment.yaml
   - service.yaml
   - ingress.yaml
