@@ -1,4 +1,5 @@
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
+  - sealed-ghcr-pull-secret.yaml
   - ../eodt-kustomization.yaml
