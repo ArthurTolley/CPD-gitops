@@ -21,3 +21,10 @@ spec:
                 name: eodt-api-service
                 port:
                   number: 80
+          - path: /eodt/openapi.json
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: eodt-api-service
+                port:
+                  number: 80
