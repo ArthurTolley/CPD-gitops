@@ -5,6 +5,9 @@ metadata:
   namespace: eodt
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite ^/eodt/openapi.json$ /openapi.json break;
+      rewrite ^/eodt/docs/(.*)$ /docs/$1 break;
 spec:
   ingressClassName: nginx
   rules:
