@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: ghcr.io/arthurtolley/eodt:0.0.2 # {"$imagepolicy": "flux-system:eodt"}
+          image: ghcr.io/arthurtolley/eodt:0.0.3 # {"$imagepolicy": "flux-system:eodt"}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
